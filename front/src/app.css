@@ -1,0 +1,530 @@
+body {
+  margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap');
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.popup {
+  max-width: 400px !important;
+}
+
+.card-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+header{
+  width: 100%;
+}
+
+header .wrapper {
+  height: 100px;
+  background: rgba(28, 54, 85, .2);
+	
+}
+
+header .logo{
+  margin-top: 40px;
+  float: left;
+}
+
+header a.hamburger{
+  text-decoration: none;
+  display: none;
+  float: right;
+  margin-top: 41px;
+  
+  width: 24px;
+  height: 19px;
+  background: url('./img/hamburger_icon.png') no-repeat;
+}
+
+header a.hamburger.opned{
+  width: 19px;
+  background: url('./img/close_menu_icon.png') no-repeat;
+}
+
+
+header nav{
+  float: right;
+  opacity: 1;
+  max-width: calc(100% - 230px);
+  margin-right: 15px;
+}
+
+
+header nav ul{
+  margin-top: 40px;
+  list-style: none;
+  overflow: hidden;
+  float: left;
+}
+
+header nav ul li{
+  float: right;
+  margin-left: 50px;
+}
+
+header nav ul li a,
+header nav .login_btn{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+}
+
+header nav .login_btn{
+  float: right;
+  margin: 30px 0 0 50px;
+  padding: 10px 30px 11px 30px;
+  border: 2px solid #ffffff;
+  background: transparent;
+
+  transition: background .1s linear;
+  -webkit-transition: background .1s linear;
+  -moz-transition: background .1s linear;
+  -o-transition: background .1s linear;
+}
+
+header nav .login_btn:hover{
+  background: #ffffff;
+  color: #1c3655;
+}
+
+
+
+.root-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-controller {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 24em;
+  min-width: 21em;
+  height: 35px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(15, 15, 15, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(15, 15, 15, 0.2);
+  margin-bottom: 30px;
+  align-items: center;
+  transition: visibility 0.5s ease-out;
+}
+
+.controller {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.selected-controller {
+  transition: border 0.5s ease-out;
+  border-bottom: 2px solid #70a1ff;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50em;
+  min-width: 50em;
+  box-shadow: 0px 0px 20px 0px rgba(15, 15, 15, 0.2);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.inner-container {
+  transition: visibility 0.2s ease-out;
+}
+
+.inner-container.show {
+  visibility: visible;
+}
+
+
+.header {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 17px;
+  /* margin-left: 35px; */
+  /* margin-right: 35px; */
+  /* font-family: Ozxgen, sans-serif; */
+  font-size: 22px;
+  border-bottom: 2px solid #70a1ff;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.login-label {
+  /* font-family: Oxygen, sans-serif; */
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+
+.login-input {
+  height: 2.1em;
+  border-radius: 3px;
+  border: 1px solid #70a1ff;
+  transition: border 0.4s ease-out;
+  padding: 13px;
+  /* font-family: Oxygen, sans-serif; */
+  font-size: 19px;
+  color: #3e3e42;
+  background: rgba(15, 15, 15, 0.01);
+}
+
+.login-input:hover {
+  border: 2px solid #70a1ff;
+}
+
+.login-input:focus {
+  border: 2px solid #6565e7;
+  box-shadow: 0px 0px 20px rgba(15, 15, 15, 0.2);
+}
+
+
+.login-input::placeholder {
+  /* font-family: Oxygen, sans-serif; */
+  font-size: 16px; 
+  color: rgba(46, 213, 116, 0.839);
+  color: rgba(15, 15, 15, 0.4);
+}
+
+.login-btn {
+  padding: 2px 30px;
+  /* background-color: #417cef; */
+  border: 0;
+  font-size: 18px;
+  border-radius: 3px;
+  /* font-family: Oxygen, sans-serif; */
+  background-color: rgba(15, 15, 15, 0.03);
+  margin-top: 20px;
+  border: 2px solid #417cef;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #417cef;
+  color: white;
+}
+
+.danger-error {
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.password-state {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.pwd {
+  height: 6px;
+  flex: 1;
+  visibility: hidden;
+}
+
+.pwd-weak {
+  background-color: #e74c3c;
+}
+
+.pwd-medium {
+  background-color: #3498db;
+}
+
+.pwd-strong {
+  background-color: #2ecc71;
+}
+
+.show {
+  visibility: visible;
+}
+
+header .wrapper { margin-top: 40px; border-radius: 5px; position: relative; background: hsla(213, 61%, 64%, 0.74)}
+header { text-align: center; }
+.boardies_logo { display: block; width: 200px; padding-left: 25px; padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  height: 32px;
+  margin-top: -16px; }
+.boardies_logo img {
+	max-width: 100%;
+}
+
+.welcome {color: white;
+    margin-top: -5px;
+font-size: 13px;}
+.ui.menu { font-family: inherit !important; }
+* { font-family: 'Open Sans', Lato ,Arial,Helvetica,sans-serif !important; }
+	.ui.card>.content>.header, .ui.cards>.card>.content>.header, .ui.card .main-wrapper .content .header, header nav, header nav ul, header nav a, h1, h2, h3 { font-family: Oxygen, Lato ,Arial,Helvetica,sans-serif !important; font-weight: bold;}
+	
+	i { font-family: Icons !important; color: #e9b213;}
+	.not-logged i, .expensive i, i.exchange, i.search { color: inherit; }
+	i.exchange { margin-left: 2px !important; }
+	
+	.leftFloating {float: left; } .rightFloating {float: right; } .notFloating {clear: both; }
+	
+	.coins-overall {
+		margin-top: 1.7rem;
+	}
+	.ui.card .extra.content {text-align: center; }
+	.ui.card .header {margin-bottom: 0px; }
+	.button.ui.exchange-button {background: #8fbdeb; color: white; }
+	.button.ui.exchange-button:hover {background: #4a98e6; color: white; }
+	.expensive .button.ui.exchange-button { cursor: not-allowed; background: #ee7777;}
+	.myToDelete .button.ui.exchange-button {
+		background: #d1b745;
+	}
+	.myToDelete .button.ui.exchange-button i { display: none !important; }
+	.awaiting-container { margin-top : 0px !important;}
+	.awaiting-container .box-controller { min-width: 0px; }
+	.myToDelete .button.ui.exchange-button:hover {
+		background: #d1b745a6;
+	}
+	.expensive .button.ui.exchange-button:hover { background: #db2828; cursor: not-allowed; }
+	.expensive i.exchange {
+		display: none;
+	}
+	
+	.ui.card .main-wrapper .content {
+		flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgba(34,36,38,.1);
+    background: 0 0;
+    margin: 0;
+    padding: 1em 1em;
+    box-shadow: none;
+    font-size: 1em;
+    border-radius: 0;
+	}
+	.ui.card .main-wrapper .content .header:not(.ui) {
+		font-weight: 700;
+    font-size: 1.28571429em;
+    margin-top: -.21425em;
+    line-height: 1.28571429em;
+	display: block;
+	color: rgba(0,0,0,.85);
+	}
+	
+	.ui.card .main-wrapper .card-image {
+	border-radius: .28571429rem .28571429rem 0 0!important;
+    border-top: none!important;
+	}
+	
+	.ui.card .main-wrapper:hover {opacity:0.65; cursor: pointer;}
+	.forgotten-password { text-align: center; padding-top: 1rem; padding-bottom: 0px;padding-left: 0px;padding-right: 0px;cursor: pointer; }
+	.forgotten-password:hover { color: gray; }
+	button.login-btn {width: auto;
+    display: block;
+    max-width: 150px;
+    padding: 0.5rem;margin-left: auto;
+    margin-right: auto;padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 16px;}
+	button.login-btn.forgotten-password-button {
+		max-width: 200px;
+	}
+	.not-logged .coins-overall {display : none; }
+	
+	p.errorMessage {font-weight: bold; color: red; text-align: center; margin-top: 0.5rem; }
+	p.infoMessage {
+		font-weight: bold; color: green; text-align: center; margin-top: 0.5rem; 
+	}
+	
+	body.waiting, body.waiting * { cursor: wait !important; }
+	.login-register-container { margin-top: 2rem; 
+    margin-bottom: 3rem;}
+	.not-logged .for-logged {display: none; }
+	.menu-elements { padding-left: 0px; }
+	.profile-menu-element { float: left; margin-top: 40px; color: white;}
+	.profile-menu-element:hover { color: #4183c4;} 
+	.profile-menu-element i, .profile-menu-element div.text { color: inherit; font-size: 16px;}
+	input[type=text]:disabled {
+		background: #d4d0d0; color: black;
+	}
+	.editProfileInner { padding: 2rem; }
+	.profile-container .heading, .heading { text-align: center; margin: 2rem;}
+	.profile-container .heading h2 { margin-top: 0.1rem; }
+	.profile-container button.ui.secondary.button	{background-color: #d00b0b;}
+	.profile-container button.ui.secondary.button:hover	{background-color: #e95757;}
+	.profile-button-wrapper {text-align:center; padding-top: 0.6rem; }
+	.date-wrapper {text-align:center; }
+	.profile-button-wrapper #messageButton i, .profile-button-wrapper #reportButton i { color: white; }
+	.profile-container button.ui.primary.button { margin-bottom: 0.5rem; }
+	.profile-container .city .description {text-align: center;
+    font-size: 18px;}
+	.profile-container .cards-wrapper, .myswaps-container .cards-wrapper {    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	}
+	
+	.profile-container .info-cards, .myswaps-container .info-cards {display: flex;
+    flex-direction: column;
+		justify-content: space-between;
+	}
+	.myswaps-container .info-cards { justify-content: center; }
+	.profile-container h2.centered {text-align: center; font-size:16px;    padding-top: 2.5rem;padding-bottom: 2rem;
+    border-top: 1px solid #dfd8d8;}
+	button.button.ui.gameInAdd, button#addGameButtonFinal { background:#68c168; color: white; }
+	button.button.ui.gameInAdd:hover, button#addGameButtonFinal:hover { background: #9bef9b; }
+	button#addGameButtonFinal { text-transform: uppercase; }
+	i.new_game { color: white; }
+	.game_add_search {
+		width: 100%; text-align: center;
+		padding:2rem;
+	}
+	.game_add_search div input {
+		width: 600px; max-width: 90%;
+	}
+	.centered {text-align: center; }
+	button.button.ui.secondary.previousGameAdd:hover {background: #5f6266; }
+	.hidden { display: none !important; }
+	
+		.inner-container-game { padding:3rem; }
+	.inner-container-game .input-group {
+		width: 700px;margin: auto;
+		max-width: 100%;
+		margin-bottom: 1rem !important;
+	}
+	.descriptionArea textarea { height: 200px; }
+	.buttonsContainer { padding: 0.2rem; }
+	#filePic input { height: 2.4em;
+    /* padding: 13px; */
+    padding-top: 13px;}
+	
+	.priceWrapper input {
+		width: 80px;
+    margin: auto;
+    text-align: center;
+	}
+	input.modalPriceInput {
+		width: 80px;
+		margin-left: 1rem;
+	}
+	p.nowPrice, p.yourPrice { margin-top: 2rem; margin-bottom: 1rem; }
+	.ui.primary.modal-add { margin: auto; display: block; margin-bottom:2rem;}
+	.modal-add i { color: white; }
+	.addModalWrapper i.close {color: black!important;
+    right: 0!important;top:0 !Important;}
+	
+	.myProfile button.exchange-button { display: none !important; }
+	
+	.info-cards.game-cards .card { width: 480px; max-width: 100%;}
+	.actionsWrapper { text-align: center; }
+	.gameDescription { padding: 1rem; }
+	.ui.container.gameWrapper { 
+		margin-top: 4rem;
+	}
+	button.secondary.button.ui i { color: white; }
+	button.secondary.button.ui.goToGameModalButton {    display: block;
+    text-align: center;
+    margin: auto;
+    transform: scale(0.7);background: #68c168;}
+	button.secondary.button.ui.goToGameModalButton:hover {
+		background: #9bef9b;
+	}
+	
+	.ui.cards .ui.card.modalGameListElement {
+		
+		width: 400px;
+    max-width: 100%;}
+	
+	.ui.modal.swapModal .image + div.swapListDescription {
+		width: 400px;
+    max-width: 70%;display: flex; 
+	}
+	.whole-modal-wrapper {
+		justify-content: space-around;
+	}
+	.flexer { display: flex; }
+	.name-flexer.flexer { flex-direction: column; }
+	.ui.cards .ui.card.modalGameListElement { display: flex; justify-content: space-between; flex-direction: row; align-items: center;}
+	.modalGameListElement .header {
+		font-size: inherit;
+    font-weight: bold;
+    border: none; padding-bottom: 0px;
+	}
+	.modalGameListElement .name-flexer:hover { text-decoration: underline; }
+	.modalGameListElement .meta { padding: 5px; padding-top: 0px; }
+	.flexer.coins { position: absolute; right: 0.5rem; font-weight: bold;}
+	.modalCardsWrapper.ui.container { overflow-y: scroll; }
+	.modalCardsWrapper.ui.container .notFloating { margin-top: 5px; max-height: 300px;}
+	.ui.cards .ui.card.modalGameListElement.myCity, .ui.cards .ui.card.modalGameListElement.myPostalCode {
+		background: #68c1684d;
+	}
+	.ui.cards .ui.card.modalGameListElement.expensive, .ui.cards .ui.card.modalGameListElement.expensive.myCity, .ui.cards .ui.card.modalGameListElement.myPostalCode.expensive {
+		background: #c168684f; border: none;
+	}
+	.ui.cards .ui.card.modalGameListElement { color: black; }
+	.ui.cards .ui.card.modalGameListElement.myPostalCode {
+		border: 0.1rem solid green;
+	}
+	.ui.cards .ui.card.modalGameListElement:hover { cursor: pointer; opacity: 0.7;}
+	.ui.cards .ui.card.modalGameListElement.myCity .flexer.coins , .ui.cards .ui.card.modalGameListElement.myPostalCode .flexer.coins { color: green; }
+	.ui.cards .ui.card.modalGameListElement.expensive .flexer.coins { color: red; }
+	.ui.cards .ui.card.modalGameListElement.activeBoardie { border: 0.1rem solid blue !important; background: #b3bffd4f !important;}
+	.ui.cards .ui.card.modalGameListElement.expensive .flexer.coins i { color: black; }
+	/* #makeSwapButton { display: none; } */
+	#makeSwapButton.affordable { display: block; }
+	i.warning { color: white; }
+	button.primary.ui.button.notAffordable {
+		background: #1b1c1d;
+	}
+	button.primary.ui.button.notAffordable:hover {
+		background: #5f6266;
+	}
+	p.notAffordable { color: red; }
+	.ui.card.swapCard { margin-top: 2rem; margin-bottom: 4rem; }
+	.myswaps-container .ui.container.cards-wrapper { margin-bottom: 2.3rem; border-bottom:1px solid #80808033;}
+	
+	p.notAffordable strong { color: black; }
+	.myswaps-container .box-controller { max-width: 100%; height: auto;}
+	.myswaps-container .box-controller .controller { flex: none; -ms-flex: none; padding: 0.4rem;padding-left: 1rem; padding-right: 1rem;}
+	i.phone { color: black; }
+	i.check {color: white; }
+	.myswaps-container .info-cards .description { text-align: center; }
+	.myswaps-container .swapCard .description { padding-top: 0.3rem; margin-top: 0px!important; }
+	.myswaps-container .swapCard .description button.ui.button { margin-top: 0.3rem; }
+	.myswaps-container .swapCard .description p {margin-top: 0px; margin-bottom: 0px; padding: 0;}
+	.myswaps-container .info-cards .description button.ui.button.primary { background: #289b17;}
+	.myswaps-container .info-cards .description button.ui.button.primary:hover { background: #289b1775;}
+	.myswaps-container .info-cards .description button.ui.button.secondary { background: #c41212;}
+	.myswaps-container .info-cards .description button.ui.button.secondary:hover { background: #c41212c7;}
+	.swapCard .image { max-height: 305px; overflow:hidden;}
+	.dateDescription {max-width: 12.7ch;
+    /* text-overflow: clip; */
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;}

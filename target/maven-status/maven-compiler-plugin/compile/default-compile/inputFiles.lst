@@ -1,0 +1,16 @@
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\models\Boardies.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\boardies\BoardiesApplication.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\controllers\HelloController.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\models\Role.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\models\User.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\repositories\SwapRepository.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\repositories\BoardiesRepository.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\repositories\UserRepository.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\controllers\AuthenticationController.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\repositories\SessionRepository.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\controllers\DropDB.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\models\Session.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\models\Game.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\models\Swap.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\repositories\GameRepository.java
+F:\IO\Boardies_new\board\src\main\java\pl\boardies\repositories\RoleRepository.java

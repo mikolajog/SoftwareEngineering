@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "title": "Gra1",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 710,
+    "rating": 3
+  },
+  {
+    "id": 1,
+    "title": "Gra2",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 415,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "title": "Gra3",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 464,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "title": "Gra4",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 741,
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "title": "Gra5",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 317,
+    "rating": 1
+  },
+  {
+    "id": 5,
+    "title": "Gra6",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 254,
+    "rating": 0
+  },
+  {
+    "id": 6,
+    "title": "Gra7",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 573,
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "title": "Gra8",
+    "image": "https://livro.pl/media/catalog/product/cache/1/image/555x555/602f0fa2c1f0d1ba5e241f914e856ff9/1/5/15203443367717114.jpg.jpg",
+    "price": 246,
+    "rating": 0
+  }
+]
